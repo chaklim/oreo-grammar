@@ -15,20 +15,25 @@ const App = () => {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    ref.current?.scrollTo(0, ref.current?.scrollHeight);
+    ref.current?.parentElement?.scrollTo(0, ref.current.getBoundingClientRect().height);
   }, [oreo]);
 
   return (
-    <Flex flexDirection="column" flex="1" justifyContent="flex-end" style={{ width: '100vw', height: '100vh' }}>
-      <Flex flexDirection="column" alignItems="center" ref={ref} style={{ overflow: 'scroll' }}>
-        {oreo.map(({ id, type }, index) => {
-          const Component = [OREO_TOP, OREO_BOTTOM, OREO_RE, OREO_SPACE][type];
-          const extraStyle = styleOfOeroType(type, index + 1 < oreo.length ? oreo[index + 1].type : undefined);
-          return <Flex key={id} sx={extraStyle} style={{ zIndex: -index }} children={<Component />} />;
-        })}
-      </Flex>
+    <Flex
+      flexDirection="column"
+      flex="1"
+      alignItems="center"
+      justifyContent="flex-end"
+      ref={ref}
+      style={{minHeight: '100%'}}
+    >
+      {oreo.map(({ id, type }, index) => {
+        const Component = [OREO_TOP, OREO_BOTTOM, OREO_RE, OREO_SPACE][type];
+        const extraStyle = styleOfOeroType(type, index + 1 < oreo.length ? oreo[index + 1].type : undefined);
+        return <Box key={id} sx={extraStyle} style={{ zIndex: -index }} children={<Component />} />;
+      })}
 
-      <Flex flexDirection="row" justifyContent="center" alignItems="center" flexShrink={0} flex={0} sx={controlStyle}>
+      <Flex flexDirection="row" justifyContent="center" alignItems="center" sx={controlStyle}>
         <AppButton onClick={addOTop}>O (top)</AppButton>
         <AppButton onClick={addSpace}>&</AppButton>
         <AppButton onClick={addRe}>RE</AppButton>
@@ -43,7 +48,11 @@ const App = () => {
 
 const AppButton = (props: any) => <Button {...props} sx={{ color: 'black', minWidth: '80px' }} />;
 const controlStyle: React.CSSProperties = {
-  minHeight: '44px',
+  height: '44px',
+  position: 'fixed',
+  bottom: 0,
+  width: '100%',
+  background: 'white',
 };
 
 enum OreoTypes {
