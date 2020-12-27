@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
 import React, { Reducer, useEffect, useMemo, useReducer, useRef } from 'react';
 import { Box, Button, Flex, Image } from 'rebass';
-
 import O_BOTTOM from './images/o-bottom.png';
 import O_TOP from './images/o-top.png';
 import RE from './images/re.png';
@@ -29,7 +28,7 @@ const App = () => {
         })}
       </Flex>
 
-      <Flex flexDirection="row" justifyContent="center" flexShrink={0} flex={0}>
+      <Flex flexDirection="row" justifyContent="center" alignItems="center" flexShrink={0} flex={0} sx={controlStyle}>
         <AppButton onClick={addOTop}>O (top)</AppButton>
         <AppButton onClick={addSpace}>&</AppButton>
         <AppButton onClick={addRe}>RE</AppButton>
@@ -43,6 +42,9 @@ const App = () => {
 };
 
 const AppButton = (props: any) => <Button {...props} sx={{ color: 'black', minWidth: '80px' }} />;
+const controlStyle: React.CSSProperties = {
+  minHeight: '44px',
+};
 
 enum OreoTypes {
   O_TOP,
