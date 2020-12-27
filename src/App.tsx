@@ -194,14 +194,13 @@ const styleOfOeroType: (curr: OreoTypes, next: OreoTypes | undefined) => React.C
   }
   if ((curr === OreoTypes.O_TOP || curr === OreoTypes.O_BOTTOM) && next === OreoTypes.RE) {
     return {
-      margin: '0 0 -105px',
+      margin: '0 0 -108px',
     };
   }
 
   if (curr === OreoTypes.RE && next === OreoTypes.RE) {
     return {
-      margin: '0 0 -96px',
-      // margin: '0 0 -88px',
+      margin: '0 0 -100px',
     };
   }
   if (curr === OreoTypes.RE && (next === OreoTypes.O_TOP || next === OreoTypes.O_BOTTOM)) {
