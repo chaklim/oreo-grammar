@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/oreo-grammar/static/css/main.e18f4224.chunk.css",
-    "main.js": "/oreo-grammar/static/js/main.77a0fbb8.chunk.js",
-    "main.js.map": "/oreo-grammar/static/js/main.77a0fbb8.chunk.js.map",
+    "main.css": "/oreo-grammar/static/css/main.a55cf752.chunk.css",
+    "main.js": "/oreo-grammar/static/js/main.9df59d8b.chunk.js",
+    "main.js.map": "/oreo-grammar/static/js/main.9df59d8b.chunk.js.map",
     "runtime-main.js": "/oreo-grammar/static/js/runtime-main.1d2b079c.js",
     "runtime-main.js.map": "/oreo-grammar/static/js/runtime-main.1d2b079c.js.map",
     "static/js/2.fc82bd84.chunk.js": "/oreo-grammar/static/js/2.fc82bd84.chunk.js",
     "static/js/2.fc82bd84.chunk.js.map": "/oreo-grammar/static/js/2.fc82bd84.chunk.js.map",
     "index.html": "/oreo-grammar/index.html",
-    "static/css/main.e18f4224.chunk.css.map": "/oreo-grammar/static/css/main.e18f4224.chunk.css.map",
+    "static/css/main.a55cf752.chunk.css.map": "/oreo-grammar/static/css/main.a55cf752.chunk.css.map",
     "static/js/2.fc82bd84.chunk.js.LICENSE.txt": "/oreo-grammar/static/js/2.fc82bd84.chunk.js.LICENSE.txt",
     "static/media/o-bottom.17e1a60e.png": "/oreo-grammar/static/media/o-bottom.17e1a60e.png",
     "static/media/o-top.eff65fad.png": "/oreo-grammar/static/media/o-top.eff65fad.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.1d2b079c.js",
     "static/js/2.fc82bd84.chunk.js",
-    "static/css/main.e18f4224.chunk.css",
-    "static/js/main.77a0fbb8.chunk.js"
+    "static/css/main.a55cf752.chunk.css",
+    "static/js/main.9df59d8b.chunk.js"
   ]
 }
