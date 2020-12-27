@@ -25,7 +25,7 @@ const App = () => {
       alignItems="center"
       justifyContent="flex-end"
       ref={ref}
-      style={{minHeight: '100%'}}
+      style={{ minHeight: '100%' }}
     >
       {oreo.map(({ id, type }, index) => {
         const Component = [OREO_TOP, OREO_BOTTOM, OREO_RE, OREO_SPACE][type];
@@ -39,14 +39,16 @@ const App = () => {
         <AppButton onClick={addRe}>RE</AppButton>
         <AppButton onClick={addOBottom}>O (bottom)</AppButton>
 
-        <AppButton onClick={removeTop}>Remove Top</AppButton>
+        {/* <AppButton onClick={removeTop}>Remove Top</AppButton> */}
         <AppButton onClick={removeBottom}>Remove Bottom</AppButton>
       </Flex>
     </Flex>
   );
 };
 
-const AppButton = (props: any) => <Button {...props} sx={{ color: 'black', minWidth: '80px' }} />;
+const AppButton = (props: any) => (
+  <Button {...props} sx={{ color: 'black', minWidth: '50px', margin: '2px', letterSpacing: '-0.5px' }} />
+);
 const controlStyle: React.CSSProperties = {
   height: '44px',
   position: 'fixed',
