@@ -1,6 +1,7 @@
 import { nanoid } from 'nanoid';
 import React, { Reducer, useEffect, useMemo, useReducer, useRef } from 'react';
 import { Box, Button, Flex, Image } from 'rebass';
+
 import O_BOTTOM from './images/o-bottom.png';
 import O_TOP from './images/o-top.png';
 import RE from './images/re.png';
