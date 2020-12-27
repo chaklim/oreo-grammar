@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/oreo-grammar/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/oreo-grammar/static/js/main.0ab86a25.chunk.js",
+    "main.js.map": "/oreo-grammar/static/js/main.0ab86a25.chunk.js.map",
+    "runtime-main.js": "/oreo-grammar/static/js/runtime-main.1d2b079c.js",
+    "runtime-main.js.map": "/oreo-grammar/static/js/runtime-main.1d2b079c.js.map",
+    "static/js/2.19647449.chunk.js": "/oreo-grammar/static/js/2.19647449.chunk.js",
+    "static/js/2.19647449.chunk.js.map": "/oreo-grammar/static/js/2.19647449.chunk.js.map",
+    "index.html": "/oreo-grammar/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/oreo-grammar/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.19647449.chunk.js.LICENSE.txt": "/oreo-grammar/static/js/2.19647449.chunk.js.LICENSE.txt",
+    "static/media/o-bottom.17e1a60e.png": "/oreo-grammar/static/media/o-bottom.17e1a60e.png",
+    "static/media/o-top.eff65fad.png": "/oreo-grammar/static/media/o-top.eff65fad.png",
+    "static/media/re.4b1a9c2f.png": "/oreo-grammar/static/media/re.4b1a9c2f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d2b079c.js",
+    "static/js/2.19647449.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.0ab86a25.chunk.js"
+  ]
+}
