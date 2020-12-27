@@ -7,7 +7,7 @@ import RE from './images/re.png';
 
 const OREO_TOP = () => <Image alt="O" src={O_TOP} sx={{ transform: 'scale(0.92)' }} />;
 const OREO_BOTTOM = () => <Image alt="O" src={O_BOTTOM} sx={{ transform: 'scale(0.92)' }} />;
-const OREO_RE = () => <Image alt="RE" src={RE} sx={{ transform: 'scale(0.98)' }} />;
+const OREO_RE = () => <Image alt="RE" src={RE} sx={{ transform: 'scale(0.97)' }} />;
 const OREO_SPACE = () => <Box style={{ width: '100px', height: '120px' }} />;
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    ref.current?.parentElement?.scrollTo(0, ref.current.getBoundingClientRect().height);
+    setTimeout(() => {ref.current?.parentElement?.scrollTo(0, ref.current.getBoundingClientRect().height);}, 10);
   }, [oreo]);
 
   return (
@@ -205,9 +205,14 @@ const styleOfOeroType: (curr: OreoTypes, next: OreoTypes | undefined) => React.C
       margin: '0 0 -100px',
     };
   }
-  if (curr === OreoTypes.RE && (next === OreoTypes.O_TOP || next === OreoTypes.O_BOTTOM)) {
+  if (curr === OreoTypes.RE && next === OreoTypes.O_TOP) {
     return {
-      margin: '0 0 -118px',
+      margin: '0 0 -130px',
+    }
+  }
+  if (curr === OreoTypes.RE && next === OreoTypes.O_BOTTOM) {
+    return {
+      margin: '0 0 -122px',
     };
   }
 

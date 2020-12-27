@@ -19,4 +19,5 @@ code {
   bottom: 44px;
   right: 0;
   overflow-y: scroll;
+  padding-top: 44px;
 }
